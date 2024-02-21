@@ -12,6 +12,20 @@
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
   overflow: hidden;
+
+  animation-name: arrow-enter-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+
+  @keyframes arrow-enter-animation {
+    0% {
+      transform: translateY(10rem) rotate(180deg);
+    }
+
+    100% {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 .arrow-slide {
@@ -23,6 +37,20 @@
   position: absolute;
   display: block;
   z-index: 0;
+
+  animation-name: slide-animation;
+  animation-duration: 1s;
+  animation-delay: 2.2s;
+
+  @keyframes slide-animation {
+    0% {
+      transform: none;
+    }
+
+    100% {
+      transform: translateY(200%);
+    }
+  }
 }
 
 .left-arm {
@@ -83,5 +111,7 @@
     transform: translateY(200%);
   }
 }
+
+
 
 // /Up Arrow Swipe
