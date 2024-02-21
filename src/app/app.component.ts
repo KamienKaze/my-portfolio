@@ -4,11 +4,12 @@ import { RouterOutlet } from '@angular/router';
 
 import WAVES from 'vanta/dist/vanta.waves.min.js';
 import { ArrowComponent } from './components/arrow/arrow.component';
+import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ArrowComponent],
+  imports: [CommonModule, RouterOutlet, ArrowComponent, WelcomePageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
