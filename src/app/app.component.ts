@@ -13,7 +13,8 @@ import { ArrowComponent } from './components/arrow/arrow.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'my-portfolio';
+  name: string = 'Michal Kaminski';
+  specialization: string = 'Frontend Developer';
 
   @ViewChild('background', { static: true }) backgroundElement: ElementRef;
 
