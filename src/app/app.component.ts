@@ -14,9 +14,6 @@ import { WelcomePageComponent } from './components/welcome-page/welcome-page.com
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  name: string = 'Michal Kaminski';
-  specialization: string = 'Frontend Developer';
-
   @ViewChild('background', { static: true }) backgroundElement: ElementRef;
 
   ngOnInit() {
@@ -31,7 +28,7 @@ export class AppComponent {
       scaleMobile: 1.0,
       color: 0x0,
       waveHeight: 11.0,
-      waveSpeed: 0.4,
+      waveSpeed: 0.5,
     });
   }
 }
