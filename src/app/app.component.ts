@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
@@ -16,7 +16,9 @@ import { WelcomePageComponent } from './components/welcome-page/welcome-page.com
 export class AppComponent {
   @ViewChild('background', { static: true }) backgroundElement: ElementRef;
 
-  ngOnInit() {
+  constructor() {}
+
+  ngAfterViewInit() {
     WAVES({
       el: this.backgroundElement.nativeElement,
       mouseControls: true,
